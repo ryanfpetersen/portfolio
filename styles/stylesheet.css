@@ -1,0 +1,7 @@
+/* This is a CSS comment */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: LightSteelBlue;
+  }
