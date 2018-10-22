@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
   <body>
-    <nav>
+    <div class="retro-pages">
+    <nav class="retro-pages">
       <a href="index.html"> Home</a> |
       <a href="about-me.html">About Me</a> |
       <a href="class1-homework.html">Project 1</a> |
@@ -16,29 +17,30 @@
       <h1>Activity:Practicing Sectioning Elements in HTML</h1>
     </header>
     <nav>
-      <ul>
-        <li>Section</li>
-        <li>Article</li>
-        <li>Aside</li>
-        <li>cats</li>
+      <ul class="retro-pages">
+        <li><img class="bullet" src="images/greenball.gif" alt="bullet point:">Just Some Section</li>
+        <li><img class="bullet" src="images/tball.gif" alt="bullet point:">Sammy</li>
+        <li><img class="bullet" src="images/greenball.gif" alt="bullet point:">Aside</li>
       </ul>
     </nav>
     <section>
       <header>
-        <h2>Section</h2>
+        <h2 class="retro-pages">Just Some Section</h2>
       </header>
-      <p>This is the section</p>
+      <p>Skip this part and proceed to Sammy</p>
     </section>
     <article>
       <header>
-        <h2>Article</h2>
+        <h2 class="retro-pages">Sammy</h2>
       </header>
-      <p>This is the article</p>
-      <img src="images/sammy-hamper.jpg" alt="Baby inside a clothes hamper" height="200">
+      <figure class="retro-pages">
+        <img id="sammy" src="images/sammy-hamper.jpg" alt="Baby inside a clothes hamper" height="400">
+        <figcaption style="text-align:center;">Samuel Seyfert Petersen: Born December 12, 2017</figcaption>
+      </figure>
     </article>
     <aside>
       <header>
-        <h3>Aside</h3>
+        <h3 class="retro-pages">Aside</h3>
       </header>
       <ul>
         <li>Item 1</li>
@@ -48,5 +50,6 @@
     </aside>
     <footer>
     </footer>
+    </div>
   </body>
 </html>

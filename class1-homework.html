@@ -6,7 +6,8 @@
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     </head>
     <body>
-      <nav>
+      <div class="retro-pages">
+      <nav class="retro-pages">
         <a href="index.html"> Home</a> |
         <a href="about-me.html">About Me</a> |
         <a href="class1-homework.html">Project 1</a> |
@@ -15,7 +16,7 @@
       <h1>UW PCE Class: HTML5-100</h1>
       <section>
         <header>
-        <h2>Homework Assignment 1 Overview</h2>
+        <h2 class="retro-pages">Homework Assignment 1 Overview</h2>
         <p>This web page is for the UW PCE class HTML5-100. The page contains
           content to satisfy the requirements for homework assignment 1</p>
         </header>
@@ -23,7 +24,7 @@
       </section>
       <section>
         <header>
-          <h2>Instructions</h2>
+          <h2 class="retro-pages">Instructions</h2>
           <p>Part 1: Write one paragraph summarizing what semantic elements are (max of 150 words)</p>
           <p>Part 2: Use at least 15 different types of HTML elements (correctly!)</p>
         </header>
@@ -31,7 +32,7 @@
           <header>
             <h2>Homework Assignment Answers</h2>
           </header>
-          <h3>Part 1: What are semantic elements?</h3>
+          <h3 class="retro-pages">Part 1: What are semantic elements?</h3>
           <p>A web page is composed of distinct parts called <mark>semantic elements</mark>. These elements are written using <abbr title="HyperText Markup Language">HTML</abbr>, and each has a specific meaning that
                       defines its purpose to both the web developer and the web browser. For example, paragraphs, lists, headings and sections are all defined with semantic elements.
            Semantic elements are used to organize the web page and present the content in a standard, predictable manner.
@@ -40,7 +41,11 @@
             <h4>Learn more about semantic elements</h4>
             <p>w3schools is an excellent resource for all things HTML5 including semantic elements. Read the <a href="https://www.w3schools.com/html/html5_semantic_elements.asp"> overview of HTML5 Semantic Elements</a></p>
           </aside>
-          <h3>Part 2: 15 types of HTML elements used on this page</h3>
+          <div id="dinos-pizza">
+          <a href="http://dinostomatopie.com/"><img id="pizza" src="images/pizza-square.gif" alt="spinning pizza" height="100"></a>
+          <p>THANKS TO DINO'S PIZZA FOR THE RETRO CONCEPT (AND DELICIOUS PIES) click the pizza</p>
+          </div>
+          <h3 class="retro-pages">Part 2: 15 types of HTML elements used on this page</h3>
           <p>Here is the list of the elements on this web page</p>
           <ol>
             <li>Head</li>
@@ -64,5 +69,6 @@
       <footer>
         <p>Page created <time datetime="2018-10-05 10:00">October 5, 2018 at 10 a.m.</time> by Ryan Petersen</p>
       </footer>
+      </div>
     </body>
 </html>
