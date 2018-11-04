@@ -2,14 +2,55 @@
 * {
   box-sizing: border-box;
   }
-body.main-pages {
-  background-color: LightSteelBlue;
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
   }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+body {
+  /* background-color: LightSteelBlue; */
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+  }
+header {
+  /* background-color: coral; */
+}
+nav {
+  /* background-color: lightblue; */
+  flex: 14%;
+}
+section {
+  /* background-color: lightgreen; */
+}
+.Project1, .Project2 {
+  flex: 43%;
+  padding: .65em;
+}
+.Project-row-two {
+  flex: 20%;
+  padding: .65em;
+}
+footer {
+  /* background-color: gray; */
+}
+h1, h2, h3 {
+  margin: 0;
+}
+.flexbox-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS for the 2 retro styled pages (Projects 1 & 2) */
 body.retro-pages {
   background-image: url(../images/dinos-stars.gif);
   margin: 0px;
   padding: 15px;
-  font-family: Times, "Times New Roman", serif;
+  /* font-family: Times, "Times New Roman", serif; */
+  font-family: 'VT323', monospace;
   color: white;
   }
 nav.retro-pages {
@@ -26,9 +67,6 @@ li.retro-item {
   border: 5px double DarkViolet;
   width: 30%;
   background-color: GoldenRod;
-}
-img.bullet {
-  padding-right: 6px;
 }
 #dinos-pizza {
   display: block;
