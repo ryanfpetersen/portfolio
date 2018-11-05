@@ -19,25 +19,43 @@ header {
   /* background-color: coral; */
 }
 nav {
-  /* background-color: lightblue; */
-  flex: 14%;
+  /* background-color: lavender; */
+  flex: 10%;
+  border-right: 1px solid grey;
+  padding: 0 .5em 1.5em 0;
+}
+ul.home {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 section {
   /* background-color: lightgreen; */
+  /* border: 1px solid purple; */
 }
-.Project1, .Project2 {
-  flex: 43%;
-  padding: .65em;
+/* Home page section properties */
+section.Project1, section.Project2 {
+  flex: 45%;
+}
+section.Project1 {
+  padding: 0 .5em .5em 3em;
+}
+section.Project2 {
+  padding: 0 .5em .5em .5em;
+}
+p.Project1, p.Project2 {
+  max-width: 420px
 }
 .Project-row-two {
   flex: 20%;
   padding: .65em;
+  /* border-top: 1px solid purple; */
+}
+a {
+  text-decoration: none;
 }
 footer {
   /* background-color: gray; */
-}
-h1, h2, h3 {
-  margin: 0;
 }
 .flexbox-footer {
   display: flex;
