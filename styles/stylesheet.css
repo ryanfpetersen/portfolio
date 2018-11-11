@@ -10,6 +10,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+a {
+  text-decoration: none;
+}
 body {
   /* background-color: LightSteelBlue; */
   font-family: 'Open Sans Condensed', sans-serif;
@@ -20,25 +23,52 @@ header {
 }
 nav {
   /* background-color: lavender; */
-  flex: 10%;
+  flex: 16%;
   border-right: 1px solid grey;
-  padding: 0 .5em 1.5em 0;
+  padding: 0 0 .5em 0;
 }
 ul.home {
     list-style-type: none;
-    margin: 0;
+    margin: .5em 0;
     padding: 0;
 }
-section {
-  /* background-color: lightgreen; */
-  /* border: 1px solid purple; */
+li.home {
+  padding: .1em 0;
+  font-size: 1.125em; /* 1.125em = 18px/16px */
+  transition: font-size .1s;
 }
-/* Home page section properties */
+li.home:hover {
+  font-size: 1.25em; /* 1.25em=20px/16px */
+}
+/* Use transition effect on headshot photo */
+div.headshot {
+  width: 160px;
+  height: 160px;
+}
+img.headshot {
+  width: 150px;
+  height: 150px;
+  transition: all .02s;
+}
+img.headshot:hover {
+  width: 155px;
+  height: 155px;
+  transform: rotate(1deg);
+}
+/* Home page Project sections */
 section.Project1, section.Project2 {
-  flex: 45%;
+  flex: 42%;
+}
+section[class^="Project"] {
+  background-color: white;
+  -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 1s;
+}
+section[class^="Project"]:hover {
+  background-color: #d7d7f4;
 }
 section.Project1 {
-  padding: 0 .5em .5em 3em;
+  padding: 0 .5em .5em .5em;
 }
 section.Project2 {
   padding: 0 .5em .5em .5em;
@@ -50,9 +80,6 @@ p.Project1, p.Project2 {
   flex: 20%;
   padding: .65em;
   /* border-top: 1px solid purple; */
-}
-a {
-  text-decoration: none;
 }
 footer {
   /* background-color: gray; */
