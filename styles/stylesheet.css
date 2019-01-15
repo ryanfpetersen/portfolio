@@ -1,17 +1,17 @@
-/* This is a CSS comment */
 * {
   box-sizing: border-box;
-  }
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
   }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 body {
   /* background-color: LightSteelBlue; */
@@ -19,41 +19,19 @@ body {
   margin: 0;
   }
 header {
-  /* background-color: coral; */
+  background-color: coral;
 }
 nav {
-  /* background-color: lavender; */
+  background-color: lavender;
   flex: 16%;
   border-right: 1px solid grey;
   padding: 0 0 .5em 0;
+  font-size: 1.25em; /* 1.25em = 20px/16px */
 }
-ul.home {
+nav ul {
     list-style-type: none;
-    margin: .5em 0;
+    margin: 10px 0;
     padding: 0;
-}
-li.home {
-  padding: .1em 0;
-  font-size: 1.125em; /* 1.125em = 18px/16px */
-  transition: font-size .1s;
-}
-li.home:hover {
-  font-size: 1.25em; /* 1.25em=20px/16px */
-}
-/* Use transition effect on headshot photo */
-div.headshot {
-  width: 160px;
-  height: 160px;
-}
-img.headshot {
-  width: 150px;
-  height: 150px;
-  transition: all .02s;
-}
-img.headshot:hover {
-  width: 155px;
-  height: 155px;
-  transform: rotate(1deg);
 }
 /* Home page Project sections */
 section.Project1, section.Project2 {
@@ -89,21 +67,120 @@ footer {
   justify-content: center;
   align-items: center;
 }
-/* CSS for the 2 retro styled pages (Projects 1 & 2) */
+/*------------------- Resume -------------------*/
+div.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.resume-body {
+  font-family: 'Open Sans', sans-serif;
+}
+.resume-header {
+  background-color: transparent;
+}
+.resume-header h1 {
+  margin: 0;
+}
+.resume-header ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.resume-header li {
+  margin-right: 30px;
+}
+.resume-main h2 {
+  margin: 0;
+}
+.resume-main h3 {
+  margin: 0;
+}
+/*------------------- End Resume -------------------*/
+/* CSS for the retro styled page  */
 body.retro-pages {
   background-image: url(../images/dinos-stars.gif);
   margin: 0px;
-  padding: 15px;
-  /* font-family: Times, "Times New Roman", serif; */
+  padding: 0px;
   font-family: 'VT323', monospace;
+  font-size: 1.5em; /* 1.25=24px/16px */
   color: white;
   }
+.white-space100 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+.white-space100 p {
+  width: 70%;
+}
+.retro-pages i {
+  display: block;
+  text-align: center;
+}
+.retro-quote {
+  font-family: 'Noto Serif', serif;
+  font-size: 2.0em; /* 2.0=32px/16px */
+  width: 70%;
+}
+.quote-author {
+  text-align: center;
+}
+.white-space60 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+.white-space60 p {
+  width: 70%;
+}
+.white-space40 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+.clear-space10 {
+  width: 100%;
+  height: 10vh;
+}
+.clear-space20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+}
+.clear-space20 img {
+  display: block;
+}
 nav.retro-pages {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   padding: 10px;
   text-align: center;
   border: 10px double DarkViolet;
   width: 100%;
   background-color: GoldenRod;
+  color: DarkViolet;
   font-size: 1.25em; /* 20px/16px = 1.25em */
   }
 li.retro-item {
@@ -113,29 +190,12 @@ li.retro-item {
   width: 30%;
   background-color: GoldenRod;
 }
-#dinos-pizza {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: double;
-  border-color: DarkGreen;
-  border-width: 5px;
+.dinos-pizza {
+  border: 20px groove lime;
   margin: 5px;
 }
-#sammy {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-figure.retro-pages {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-style: groove;
-  border-color: red;
-  border-width: 20px;
+.dinos-pizza div {
+  margin: 0 auto;
 }
 h2.retro-pages, h3.retro-pages {
   color: red;
