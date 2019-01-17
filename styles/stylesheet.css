@@ -7,31 +7,41 @@
   margin: 0 auto;
   max-width: 1200px;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-body {
-  /* background-color: LightSteelBlue; */
+body.portfolio-home {
   font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
   }
-header {
-  background-color: coral;
+.portfolio-home a {
+  text-decoration: none;
 }
-nav {
-  background-color: lavender;
+.portfolio-home a:hover {
+  text-decoration: underline;
+}
+.portfolio-home header {
+  background-color: white;
+}
+.portfolio-home nav {
+  background-color: white;
   flex: 16%;
-  border-right: 1px solid grey;
-  padding: 0 0 .5em 0;
+  border-right: 1px solid gray;
   font-size: 1.25em; /* 1.25em = 20px/16px */
 }
+.portfolio-home h1 {
+  margin: 5px 0 40px 0;
+}
+.portfolio-home h2 {
+  margin: 0 0 5px 0;
+}
+.portfolio-home h3 {
+  margin: 0 0 5px 0;
+}
+.headshot {
+  position: relative;
+}
 nav ul {
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 10px 0 10px 5px;
+  padding: 0;
 }
 /* Home page Project sections */
 section.Project1, section.Project2 {
@@ -39,24 +49,24 @@ section.Project1, section.Project2 {
 }
 section[class^="Project"] {
   background-color: white;
-  -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
-  transition: background-color 1s;
+  -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
+  transition: background-color .5s;
 }
 section[class^="Project"]:hover {
-  background-color: #d7d7f4;
+  background-color: WhiteSmoke;
 }
-section.Project1 {
-  padding: 0 .5em .5em .5em;
+section[class^="Project"] img {
+  border: 1px solid gray;
 }
-section.Project2 {
-  padding: 0 .5em .5em .5em;
+section.Project1, section.Project2 {
+  padding: 0 10px 0 20px;
 }
 p.Project1, p.Project2 {
   max-width: 420px
 }
 .Project-row-two {
   flex: 20%;
-  padding: .65em;
+  padding: 10px;
   /* border-top: 1px solid purple; */
 }
 footer {
@@ -67,7 +77,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-/*------------------- Resume -------------------*/
+/*----------------------------------- Resume -----------------------------------*/
 div.resume-container {
   max-width: 800px;
   margin: 0 auto;
@@ -134,6 +144,12 @@ body.retro-pages {
   font-size: 1.5em; /* 1.25=24px/16px */
   color: white;
   }
+.retro-pages a {
+  text-decoration: none;
+}
+.retro-pages a:hover {
+  text-decoration: underline;
+}
 .white-space100 {
   display: flex;
   justify-content: center;
